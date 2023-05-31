@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="SimpleWPFapp.View.ToolBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SimpleWPFapp.View"
+             mc:Ignorable="d" d:DesignWidth="800" Height="29">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Menu>
+            <MenuItem Header="File" FontSize="16">
+                <MenuItem Header="Exit"/>
+                <MenuItem Header="Save"/>
+                <MenuItem Header="Save As"/>
+            </MenuItem>
+            <MenuItem Header="Edit" FontSize="16">
+                <MenuItem Header="Delete All"/>
+            </MenuItem>
+            <MenuItem Header="Tools" FontSize="16">
+                <MenuItem Header="Paint brushes" FontSize="16">
+                    <MenuItem Header="Small" FontSize="16"/>
+                    <MenuItem Header="Medium" FontSize="16"/>
+                    <MenuItem Header="Large" FontSize="16"/>
+                </MenuItem>
+                <MenuItem Header="Eraser" FontSize="16"/>
+            </MenuItem>
+        </Menu>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            
+        </Grid>
+    </Grid>
+</UserControl>
